@@ -1,7 +1,7 @@
 import { BsSearch } from "react-icons/bs";
 function SearchBar() {
   return (
-    <div className="px-6 py-4">
+    <div className="px-3 py-4">
       <div className="bg-zinc-100 inline-block border-solid border-2 rounded-lg border-gray-300 focus:border-blue-600"
       >
         <BsSearch className=" inline-block mx-2 mb-1" />
