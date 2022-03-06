@@ -1,5 +1,5 @@
 import { BsThreeDots, BsPlus } from "react-icons/bs";
-import SmallComp from "./SmallComp";
+import TaskCard from "./TaskCard";
 
 function StatusComp(props) {
     return ( 
@@ -10,15 +10,15 @@ function StatusComp(props) {
           <button className="ml-2 float-right" ><BsThreeDots className=" inline-block bg-gray-200 w-6 h-6 float-right rounded-full px-1" /></button>
           <button className="ml-2 float-right" ><BsPlus className=" inline-block bg-gray-200 w-6 h-6 float-right rounded-full" /></button>
           {props.onTab.map((obj)=>(
-              <SmallComp 
-              onTabHead={obj.TabHead}
-              onTabPara={obj.TabPara}
-              onTabAuthor ={obj.TabAuthor}
-              onTabAuthorColor={obj.TabAuthorColor}
-              onTabAttachColor={obj.TabAttachColor}
-              onTabAttach={obj.TabAttach}
-              onTabFlagColor={obj.TabFlagColor}
-              onTabDate ={obj.TabDate}
+              <TaskCard 
+              onTabHead={obj.tabHead}
+              onTabPara={obj.tabPara}
+              onTabAuthor ={obj.tabAuthor}
+              onTabAuthorColor={obj.tabAuthorColor}
+              onTabAttachColor={obj.tabAttachColor}
+              onTabAttach={obj.tabAttach}
+              onTabFlagColor={obj.tabFlagColor}
+              onTabDate ={obj.tabDate}
               key={Math.random().toString()}
               />
           ))}

@@ -4,129 +4,139 @@ import TopBar from "./components/TopBar";
 import StatusComp from "./components/StatusComp";
 const dataArr = [
   {
-    Title : "To do",
-    Count : "3",
-    Tab : [{
-      TabHead : "Mobile Wireframes",
-      TabPara : "",
-      TabAuthor : "VIVERRA DIAM",
-      TabAuthorColor : 'green' ,
-      TabAttachColor : "text-gray-500",
-      TabAttach : "3",
-      TabFlagColor : 'red' ,
-      TabDate : "Apr 12"
+    title : "To do",
+    count : "3",
+    tab : [{
+      tabHead : "Mobile Wireframes",
+      tabPara : "",
+      tabAuthor : "VIVERRA DIAM",
+      tabAuthorColor : 'text-green-500 bg-green-100' ,
+      tabAuthorColorbg : 'bg-green-100' ,
+      tabAttachColor : "text-gray-500",
+      tabAttach : "3",
+      tabFlagColor : 'text-red-500' ,
+      tabDate : "Apr 12"
     },
     {
-      TabHead : "User Research",
-      TabPara : "Some methods may be better than others, depending on time constraints, system maturity,type of product...",
-      TabAuthor : "MAECENAS LACUS",
-      TabAuthorColor : 'blue' ,
-      TabAttachColor : "text-gray-500",
-      TabAttach : "1",
-      TabFlagColor : 'green' ,
-      TabDate : "Mar 4"
+      tabHead : "User Research",
+      tabPara : "Some methods may be better than others, depending on time constraints, system maturity,type of product...",
+      tabAuthor : "MAECENAS LACUS",
+      tabAuthorColor : 'text-blue-500 bg-blue-100' ,
+      tabAuthorColorbg : 'bg-green-100' ,
+      tabAttachColor : "text-gray-500",
+      tabAttach : "1",
+      tabFlagColor : 'text-green-500' ,
+      tabDate : "Mar 4"
     },
     {
-      TabHead : "Client Call",
-      TabPara : ``,
-      TabAuthor : "EGET INTEGER",
-      TabAuthorColor : 'violet' ,
-      TabAttachColor : "text-gray-100",
-      TabAttach : "",
-      TabFlagColor : 'green' ,
-      TabDate : "Apr 2"
+      tabHead : "Client Call",
+      tabPara : ``,
+      tabAuthor : "EGET INTEGER",
+      tabAuthorColor : 'text-violet-500 bg-violet-100' ,
+      tabAuthorColorbg : 'bg-green-100' ,
+      tabAttachColor : "text-gray-100",
+      tabAttach : "",
+      tabFlagColor : 'text-green-500' ,
+      tabDate : "Apr 2"
     }]
   },
   {
-    Title : "In progress",
-    Count : "2",
-    Tab : [{
-      TabHead : "Login Flow",
-      TabPara : "",
-      TabAuthor : "NULLAM VELIT",
-      TabAuthorColor : 'orange' ,
-      TabAttachColor : "text-gray-100",
-      TabAttach : "",
-      TabFlagColor : 'orange' ,
-      TabDate : "Apr 3"
+    title : "In progress",
+    count : "2",
+    tab : [{
+      tabHead : "Login Flow",
+      tabPara : "",
+      tabAuthor : "NULLAM VELIT",
+      tabAuthorColor : 'text-orange-500 bg-orange-100' ,
+      tabAuthorColorbg : 'bg-green-100' ,
+      tabAttachColor : "text-gray-100",
+      tabAttach : "",
+      tabFlagColor : 'text-orange-500' ,
+      tabDate : "Apr 3"
     },
     {
-      TabHead : "Forgot Password Screen",
-      TabPara : "",
-      TabAuthor : "NULLAM VELIT",
-      TabAuthorColor : 'orange' ,
-      TabAttachColor : "text-gray-100",
-      TabAttach : "",
-      TabFlagColor : 'green' ,
-      TabDate : "Apr 6"
+      tabHead : "Forgot Password Screen",
+      tabPara : "",
+      tabAuthor : "NULLAM VELIT",
+      tabAuthorColor : 'text-orange-500 bg-orange-100' ,
+      tabAuthorColorbg : 'bg-green-100' ,
+      tabAttachColor : "text-gray-100",
+      tabAttach : "",
+      tabFlagColor : 'text-green-500' ,
+      tabDate : "Apr 6"
     }]
   },
   {
-    Title : "In review",
-    Count : "3",
-    Tab : [{
-      TabHead : "Landing Page",
-      TabPara : "",
-      TabAuthor : "MAECENAS LACUS",
-      TabAuthorColor : "blue" ,
-      TabAttachColor : "text-gray-500",
-      TabAttach : "2",
-      TabFlagColor : "green" ,
-      TabDate : "Mar 8"
+    title : "In review",
+    count : "3",
+    tab : [{
+      tabHead : "Landing Page",
+      tabPara : "",
+      tabAuthor : "MAECENAS LACUS",
+      tabAuthorColor : "text-blue-500 bg-blue-100" ,
+      tabAuthorColorbg : 'bg-green-100' ,
+      tabAttachColor : "text-gray-500",
+      tabAttach : "2",
+      tabFlagColor : "text-green-500" ,
+      tabDate : "Mar 8"
     },
     {
-      TabHead : "Annual Presentation",
-      TabPara : `Regardless of who is perusing the report, what is sought is accurate information revealing an overall...`,
-      TabAuthor : "MAECENAS LACUS",
-      TabAuthorColor : "blue" ,
-      TabAttachColor : "text-gray-100",
-      TabAttach : "",
-      TabFlagColor : "green" ,
-      TabDate : "Mar 15"
+      tabHead : "Annual Presentation",
+      tabPara : `Regardless of who is perusing the report, what is sought is accurate information revealing an overall...`,
+      tabAuthor : "MAECENAS LACUS",
+      tabAuthorColor : "text-blue-500 bg-blue-100" ,
+      tabAuthorColorbg : 'bg-green-100' ,
+      tabAttachColor : "text-gray-100",
+      tabAttach : "",
+      tabFlagColor : "text-green-500" ,
+      tabDate : "Mar 15"
     },
     {
-      TabHead : "Icons",
-      TabPara : ``,
-      TabAuthor : "EGET INTEGER",
-      TabAuthorColor : "violet" ,
-      TabAttachColor : "text-gray-100",
-      TabAttach : "",
-      TabFlagColor : "orange" ,
-      TabDate : "Apr 10"
+      tabHead : "Icons",
+      tabPara : ``,
+      tabAuthor : "EGET INTEGER",
+      tabAuthorColor : "text-violet-500 bg-violet-100" ,
+      tabAuthorColorbg : 'bg-green-100' ,
+      tabAttachColor : "text-gray-100",
+      tabAttach : "",
+      tabFlagColor : "text-orange-500" ,
+      tabDate : "Apr 10"
     }]
   },
   {
-    Title : "Done",
-    Count : "3",
-    Tab : [{
-      TabHead : "Product Mockups",
-      TabPara : "",
-      TabAuthor : "VIVERRA DIAM",
-      TabAuthorColor : "green" ,
-      TabAttachColor : "text-gray-100",
-      TabAttach : "",
-      TabFlagColor : "green" ,
-      TabDate : "Mar 2"
+    title : "Done",
+    count : "3",
+    tab : [{
+      tabHead : "Product Mockups",
+      tabPara : "",
+      tabAuthor : "VIVERRA DIAM",
+      tabAuthorColor : "text-green-500  bg-green-100" ,
+      tabAuthorColorbg : 'bg-green-100' ,
+      tabAttachColor : "text-gray-100",
+      tabAttach : "",
+      tabFlagColor : "text-green-500" ,
+      tabDate : "Mar 2"
     },
     {
-      TabHead : "Workshop Ideas",
-      TabPara : ``,
-      TabAuthor : "NULLAM VELIT",
-      TabAuthorColor : "orange" ,
-      TabAttachColor : "text-gray-100",
-      TabAttach : "",
-      TabFlagColor : "orange" ,
-      TabDate : "Mar 4"
+      tabHead : "Workshop Ideas",
+      tabPara : ``,
+      tabAuthor : "NULLAM VELIT",
+      tabAuthorColor : "text-orange-500 bg-orange-100" ,
+      tabAuthorColorbg : 'bg-green-100' ,
+      tabAttachColor : "text-gray-100",
+      tabAttach : "",
+      tabFlagColor : "text-orange-500" ,
+      tabDate : "Mar 4"
     },
     {
-      TabHead : "Navigation",
-      TabPara : ``,
-      TabAuthor : "MAECENAS LACUS",
-      TabAuthorColor : "blue" ,
-      TabAttachColor : "text-gray-100",
-      TabAttach : "",
-      TabFlagColor : "red" ,
-      TabDate : "Mar 15"
+      tabHead : "Navigation",
+      tabPara : ``,
+      tabAuthor : "MAECENAS LACUS",
+      tabAuthorColor : "text-blue-500 bg-blue-100" ,
+      tabAttachColor : "text-gray-100",
+      tabAttach : "",
+      tabFlagColor : "text-red-500" ,
+      tabDate : "Mar 15"
     }]
   }
   
@@ -138,9 +148,9 @@ function App() {
       <SearchBar />
       {dataArr.map((obj)=>(
         <StatusComp
-        onTitle={obj.Title}
-        onCount={obj.Count}
-        onTab={obj.Tab}
+        onTitle={obj.title}
+        onCount={obj.count}
+        onTab={obj.tab}
         key={Math.random().toString()}
         />
       ))}
