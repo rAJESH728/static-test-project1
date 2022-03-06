@@ -10,30 +10,30 @@ const dataArr = [
       TabHead : "Mobile Wireframes",
       TabPara : "",
       TabAuthor : "VIVERRA DIAM",
-      TabAuthorColor : {"color" :"green"} ,
+      TabAuthorColor : 'green' ,
       TabAttachColor : "text-gray-500",
       TabAttach : "3",
-      TabFlagColor : "red" ,
+      TabFlagColor : 'red' ,
       TabDate : "Apr 12"
     },
     {
       TabHead : "User Research",
       TabPara : "Some methods may be better than others, depending on time constraints, system maturity,type of product...",
       TabAuthor : "MAECENAS LACUS",
-      TabAuthorColor : "blue" ,
+      TabAuthorColor : 'blue' ,
       TabAttachColor : "text-gray-500",
       TabAttach : "1",
-      TabFlagColor : "green" ,
+      TabFlagColor : 'green' ,
       TabDate : "Mar 4"
     },
     {
       TabHead : "Client Call",
       TabPara : ``,
       TabAuthor : "EGET INTEGER",
-      TabAuthorColor : "violet" ,
+      TabAuthorColor : 'violet' ,
       TabAttachColor : "text-gray-100",
       TabAttach : "",
-      TabFlagColor : "green" ,
+      TabFlagColor : 'green' ,
       TabDate : "Apr 2"
     }]
   },
@@ -44,20 +44,20 @@ const dataArr = [
       TabHead : "Login Flow",
       TabPara : "",
       TabAuthor : "NULLAM VELIT",
-      TabAuthorColor : "orange" ,
+      TabAuthorColor : 'orange' ,
       TabAttachColor : "text-gray-100",
       TabAttach : "",
-      TabFlagColor : "orange" ,
+      TabFlagColor : 'orange' ,
       TabDate : "Apr 3"
     },
     {
       TabHead : "Forgot Password Screen",
       TabPara : "",
       TabAuthor : "NULLAM VELIT",
-      TabAuthorColor : "orange" ,
+      TabAuthorColor : 'orange' ,
       TabAttachColor : "text-gray-100",
       TabAttach : "",
-      TabFlagColor : "green" ,
+      TabFlagColor : 'green' ,
       TabDate : "Apr 6"
     }]
   },
@@ -141,6 +141,7 @@ function App() {
         onTitle={obj.Title}
         onCount={obj.Count}
         onTab={obj.Tab}
+        key={Math.random().toString()}
         />
       ))}
     </div>

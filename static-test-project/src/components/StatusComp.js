@@ -19,6 +19,7 @@ function StatusComp(props) {
               onTabAttach={obj.TabAttach}
               onTabFlagColor={obj.TabFlagColor}
               onTabDate ={obj.TabDate}
+              key={Math.random().toString()}
               />
           ))}
           </div>
