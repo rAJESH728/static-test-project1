@@ -11,15 +11,7 @@ function StatusComp(props) {
           <button className="ml-2 float-right" ><BsPlus className=" inline-block bg-gray-200 text-[22px] float-right rounded-full" /></button>
           {props.onTab.map((obj)=>(
               <TaskCard 
-              onTabHead={obj.tabHead}
-              onTabPara={obj.tabPara}
-              onTabAuthor ={obj.tabAuthor}
-              onTabAuthorColor={obj.tabAuthorColor}
-              onTabAttachColor={obj.tabAttachColor}
-              onTabAttach={obj.tabAttach}
-              onTabFlagColor={obj.tabFlagColor}
-              onTabDate ={obj.tabDate}
-              key={Math.random().toString()}
+              tabObj={obj}
               />
           ))}
           </div>

@@ -1,7 +1,7 @@
 import "./App.css";
 import SearchBar from "./components/SearchBar";
 import TopBar from "./components/TopBar";
-import StatusComp from "./components/StatusComp";
+import StatusColumn from "./components/StatusColumn";
 const dataArr = [
   {
     title : "To do",
@@ -137,7 +137,7 @@ function App() {
       <TopBar />
       <SearchBar />
       {dataArr.map((obj)=>(
-        <StatusComp
+        <StatusColumn
         onTitle={obj.title}
         onCount={obj.count}
         onTab={obj.tab}
