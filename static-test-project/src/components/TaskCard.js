@@ -2,26 +2,19 @@ import { MdOutlineAttachFile, MdAccessTimeFilled } from "react-icons/md";
 import { BsFillFlagFill } from "react-icons/bs";
 
 function TaskCard(props) {
-        // var authorColor = 'orange';
-        
-        // if (props.onTabAuthorColor === 'green'){authorColor="green"}
-        // else if(props.onTabAuthorColor === 'orange'){authorColor="orange"}
-        // else if(props.onTabAuthorColor === 'violet'){authorColor="violet"}
-        // else {authorColor="blue"}
-        // console.log(authorColor);
     return ( 
-        <div className="w-80 px-2 py-4 " >
-            <div className=" px-3 bg-white border-2 drop-shadow-lg rounded-t-lg">
-            <h1 className="font-medium mx-2 my-4">{props.onTabHead}</h1>
-            <p className="mx-2 text-sm" >{props.onTabPara}</p>
-            <p className={`inline-block text-xs ${props.onTabAuthorColor} rounded-sm m-5 p-2`}>{props.onTabAuthor}</p>
+        <div className=" px-2 py-4 " >
+            <div className=" px-3 bg-white border drop-shadow-sm rounded-t-lg">
+            <h1 className="font-medium text-[14px] mx-2 mt-4">{props.onTabHead}</h1>
+            <p className="mx-2 font-light text-[13px]" >{props.onTabPara}</p>
+            <p className={`inline-block text-[10px] ${props.onTabAuthorColor} rounded-sm m-2 p-1`}>{props.onTabAuthor}</p>
             </div>
-            <div className="bg-white border-2 drop-shadow-lg border-t-0 rounded-b-lg p-4">
-                <MdOutlineAttachFile className={`inline-block text-xl ${props.onTabAttach.length<=0?'text-gray-300':'text-gray-500'}`}/>
-                <p className={`inline-block text-s pl-1 text-gray-500`}>{props.onTabAttach}</p>
+            <div className="bg-white border drop-shadow-sm border-t-0 rounded-b-lg px-4 py-2.5">
+                <MdOutlineAttachFile className={`inline-block text-[16px] ${props.onTabAttach.length<=0?'text-gray-300':'text-gray-500'}`}/>
+                <p className={`inline-block text-[12px] pl-1 text-gray-500`}>{props.onTabAttach}</p>
                 <BsFillFlagFill className={`inline-block ml-5 ${props.onTabFlagColor} `} />
-                <MdAccessTimeFilled className="inline-block text-xl ml-5 text-gray-500"/>
-                <p className="inline-block text-gray-500 ml-1 text-xs font-medium">{props.onTabDate}</p>
+                <MdAccessTimeFilled className="inline-block text-[18px] ml-5 text-gray-400"/>
+                <p className="inline-block text-gray-500 ml-1 text-[12px] font-medium">{props.onTabDate}</p>
 
             </div>
 
